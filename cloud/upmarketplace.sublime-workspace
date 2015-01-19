@@ -1,0 +1,515 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ema",
+				"emailRegExp	{}"
+			],
+			[
+				"start",
+				"startDate	{}"
+			],
+			[
+				"location",
+				"location"
+			],
+			[
+				"res",
+				"response	{}"
+			],
+			[
+				"clu",
+				"CLUBS_CATEGORY_ARRAY"
+			],
+			[
+				"title",
+				"title"
+			],
+			[
+				"FUN",
+				"FUN_CATEGORY_ARRAY	[]"
+			],
+			[
+				"comm",
+				"commentPointer"
+			],
+			[
+				"count",
+				"countCommentsQuery	(?)"
+			],
+			[
+				"comme",
+				"commentPointerQuery	(?)"
+			],
+			[
+				"is",
+				"isSubString(string, substring)"
+			],
+			[
+				"http",
+				"httpResponse"
+			],
+			[
+				"get",
+				"getPortlandTime()"
+			],
+			[
+				"Che",
+				"CheckDate	(num)"
+			],
+			[
+				"CH",
+				"CheckDate	(num)"
+			],
+			[
+				"startRang",
+				"startRangeMoment	(num)"
+			],
+			[
+				"curre",
+				"currentPollQuery	{}"
+			],
+			[
+				"not",
+				"notification	(?)"
+			],
+			[
+				"min",
+				"minuteToMs(minutes)"
+			],
+			[
+				"minus",
+				"minusTwentyThree	{}"
+			],
+			[
+				"minu",
+				"minusTwentyFour	{}"
+			],
+			[
+				"current",
+				"currentTime	{}"
+			],
+			[
+				"minusW",
+				"minusTwentyThree	{}"
+			],
+			[
+				"mins",
+				"minusTwentyThree	(?)"
+			],
+			[
+				"events",
+				"eventsQuery	{}"
+			],
+			[
+				"setPubl",
+				"setPublicWriteAccess(allowed)"
+			],
+			[
+				"set",
+				"setPublicReadAccess(allowed)"
+			],
+			[
+				"object",
+				"objectId"
+			],
+			[
+				"obj",
+				"objectId"
+			],
+			[
+				"obje",
+				"objectId	(?)"
+			],
+			[
+				"quer",
+				"queryPoll	(?)"
+			],
+			[
+				"mat",
+				"matchesQuery(key, query)"
+			],
+			[
+				"commentPoi",
+				"commentPointerQuery	{}"
+			],
+			[
+				"comment",
+				"commentPointer"
+			],
+			[
+				"clubs",
+				"CLUBS_CATEGORY"
+			],
+			[
+				"CLUBS",
+				"CLUBS_CATEGORY_ARRAY	[]"
+			],
+			[
+				"SPORT",
+				"SPORTS_CATEGORY	(str)"
+			],
+			[
+				"SCHOOL",
+				"SCHOOL_CATEGORY_ARRAY	[]"
+			],
+			[
+				"fist",
+				"firstPart	(?)"
+			],
+			[
+				"tod",
+				"todayPoll	{}"
+			],
+			[
+				"setPUb",
+				"setPublicWriteAccess(allowed)"
+			],
+			[
+				"WMPO",
+				"WMPollAnswer	(?)"
+			],
+			[
+				"curr",
+				"currentPollQuery	(?)"
+			],
+			[
+				"comments",
+				"commentsQuery	(?)"
+			],
+			[
+				"come",
+				"commentsQuery	(?)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.js",
+			"settings":
+			{
+				"buffer_size": 238,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/**\n Contains logic relating to the registeration process.\n\n\n\n\n */\n\n\n/*\nValidate user-input before the UPMUser is created.\n*/\nexports.userBeforeSave = Parse.Cloud.beforeSave(Parse.User, function(request, response) {\n  var email = request.object.get(\"email\").toLowerCase();\n  var emailRegExp = new RegExp(\"(\\W|^)[\\w.+\\-]{0,15}@(up)\\.edu(\\W|$)\", \"i\");\n\n  console.log(\"Working.\")\n\n  // Ensure @up.edu\n  if (emailRegExp.test(email)) {\n    response.success();\n  } else {\n  	response.error(\"You must use an @up.edu email address.\")\n  }\n\n});\n",
+			"file": "signup.js",
+			"file_size": 426,
+			"file_write_time": 1421443019000000,
+			"settings":
+			{
+				"buffer_size": 535,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "upmarketplace.sublime-project",
+			"settings":
+			{
+				"buffer_size": 275,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/John/Dropbox/WhiteMochaCloud/parse/cloud/main.js",
+		"/Users/John/Dropbox/WhiteMochaCloud/parse/cloud/source/pollFunctions.js",
+		"/Users/John/Dropbox/WhiteMochaCloud/parse/cloud/source/eventFunctions.js",
+		"/Users/John/Dropbox/WhiteMochaCloud/parse/cloud/source/helperFunctions.js",
+		"/Users/John/Dropbox/WhiteMochaCloud/parse/cloud/source/commentFunctions.js",
+		"/Users/John/Dropbox/WhiteMochaCloud/parse/cloud/moment-timezone.js",
+		"/Users/John/Dropbox/WhiteMochaCloud/test/index.js",
+		"/Users/John/Dropbox/WhiteMochaCloud/parse/cloud/cloudParse.sublime-project",
+		"/Users/John/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/John/Dropbox/WhiteMochaCloud/parse/cloud/testFile.js",
+		"/Users/John/Dropbox/WhiteMochaCloud/parse/cloud/testFile",
+		"/main2.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"start date",
+			"robot",
+			"utcto",
+			"utc",
+			"error",
+			"old",
+			"delete",
+			"utcto",
+			"startdate",
+			"limit",
+			"345",
+			"startdate",
+			"pubdate",
+			"clubs",
+			"inthere",
+			"category",
+			"objectid",
+			"befores",
+			"moment",
+			"item",
+			"moment",
+			"sponsor",
+			"beforesave",
+			"getportland",
+			"beforesav",
+			"getPortland",
+			"subscrip",
+			"response.",
+			"request.",
+			"EVENT",
+			"params",
+			"poll",
+			"fetchr",
+			"fetechre",
+			"currentpoll",
+			"createpoll",
+			"https://calendar.up.edu/MasterCalendar/RSSFeeds.aspx?data=rWVImWG4wi1iC5u2UcXAOcpvbDVSuYma \nhttps://calendar.up.edu/MasterCalendar/RSSFeeds.aspx?data=rWVImWG4wi1iC5u2UcXAOcpvbDVSuYma \nhttps://calendar.up.edu/MasterCalendar/RSSFeeds.aspx?data=rWVImWG4wi1iC5u2UcXAOcpvbDVSuYma \ndsfds",
+			"CheckDate",
+			"MESSAGE",
+			"current",
+			"currentdate",
+			"fomrat",
+			"los",
+			"data",
+			"require",
+			"511",
+			"moment",
+			"master",
+			"parserss",
+			"sendpus",
+			"req",
+			"require",
+			"commentpointer",
+			"currentpoll\"",
+			"currentpoll",
+			"rss",
+			"parserss",
+			"parseacl",
+			"pa",
+			"parse",
+			"notification",
+			"evt",
+			"notif",
+			"notifica",
+			"key",
+			"event2",
+			"events2",
+			"rss",
+			"end",
+			"endtime",
+			"match",
+			"function",
+			"var funct",
+			"event",
+			"console",
+			"date.parse",
+			"date",
+			"color",
+			"object"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.js",
+					"settings":
+					{
+						"buffer_size": 238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								236,
+								236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "signup.js",
+					"settings":
+					{
+						"buffer_size": 535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								350,
+								350
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "upmarketplace.sublime-project",
+					"settings":
+					{
+						"buffer_size": 275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true
+}

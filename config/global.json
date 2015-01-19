@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "UP Marketplace": {
+            "applicationId": "6ZVQsgQNW5KpO6H5os6JxGOxZAFCEdfLua2T3PAm", 
+            "masterKey": "4HxHo5G5QLH68F3veN3UO3AbP5jE15kug0GQb8gj"
+        }, 
+        "_default": {
+            "link": "UP Marketplace"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.0"
+    }
+}
